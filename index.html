@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Independent CSS scrolling panels (with inertia)</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+
+    <body>
+            <div class="ContainerTop">
+                <div class="Top_left">
+                    <div class="hdr_img">
+                        <img src="images/kyle_hdr.gif" alt="hdr" width=60%>
+                    </div>
+                </div>
+
+                <div class="Top_right">
+                    <div class="tab">
+                          <button class="tablinks" onclick="openCity(event, 'cv')">cv.</button>
+                          <button class="tablinks" onclick="openCity(event, 'work')" id="defaultOpen">work.</button>
+                          <button class="tablinks" onclick="openCity(event, 'about')">about.</button>
+                          <button class="tablinks" onclick="openCity(event, 'ephemera')">ephemera</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class = "overlay_img">
+                <img src = "images/penis.gif" alt="yas" width=30%>
+            </div>
+
+            <div class="Container">
+                
+                <div class="Left">
+
+                    <div id="cv" class="tabcontent">
+                        <h3><b>CV</b></h3>
+                        <p> Kyle went to UCHICAGO </p>
+                    </div>
+
+                    <div id="work" class="tabcontent">
+                        <h3><b>WORK</b></h3>
+                        <p><img id="mix 5" img src="images/mix 5.jpg" alt="mix 5" height="90%" width="90%" style="cursor:pointer" onclick="showImage('images/mix 5.jpg');">
+                        <div id="largeImgPanel" onclick="hideMe(this);">
+                        <img id="largeImg" style="height: 100%">
+                        </div></p>
+
+                        <p>KWH installation University of Chicago. 2015.</p>
+
+                        <p><img src="images/KWH.jpg" alt="KWH" height="90%" width="90%" style="cursor:pointer" onclick="showImage('images/KWH.jpg');">
+                        <div id="largeImgPanel" onclick="hideMe(this);">
+                        <img id="largeImg" style="height: 100%">
+                        </div></p>
+                        <p>KWH installation University of Chicago. 2015.</p>
+
+                    </div>
+
+                    <div id="about" class="tabcontent">
+                        <h3><b>ABOUT</b></h3>
+                        <p> Kyle really sucks at fantasy football</p>
+                    </div>
+
+                    <div id="ephemera" class="tabcontent">
+                        <h3><b>EPHEMERA</b></h3>
+                        <p> Kyle's ephemera </p>
+                    </div>
+
+
+                    <script>
+                        function showImage(imgName) {
+                            document.getElementById('largeImg').src = imgName;
+                            showLargeImagePanel();
+                            unselectAll();
+                        }
+                        function showLargeImagePanel() {
+                            document.getElementById('largeImgPanel').style.visibility = 'visible';
+                        }
+                        function unselectAll() {
+                            if(document.selection) document.selection.empty();
+                            if(window.getSelection) window.getSelection().removeAllRanges();
+                        }
+                        function hideMe(obj) {
+                            obj.style.visibility = 'hidden';
+                        }
+                    </script>
+
+                    <script>
+                        function openCity(evt, cityName) {
+                            // Declare all variables
+                            var i, tabcontent, tablinks;
+
+                            // Get all elements with class="tabcontent" and hide them
+                            tabcontent = document.getElementsByClassName("tabcontent");
+                            for (i = 0; i < tabcontent.length; i++) {
+                                tabcontent[i].style.display = "none";
+                            }
+
+                            // Get all elements with class="tablinks" and remove the class "active"
+                            tablinks = document.getElementsByClassName("tablinks");
+                            for (i = 0; i < tablinks.length; i++) {
+                                tablinks[i].className = tablinks[i].className.replace(" active", "");
+                            }
+
+                            // Show the current tab, and add an "active" class to the button that opened the tab
+                            document.getElementById(cityName).style.display = "block";
+                            evt.currentTarget.className += " active";
+                        }
+                        document.getElementById("defaultOpen").click();
+                    </script>
+                </div>
+
+                <div class="Right">
+                    <center><b><span style='font-size: 2rem;'>KWH. PAINTING</span></b></center>
+                    <p> A trend that presented itself in the critical statements of memebers of my university was to question an aritist’s association with particular imagery. This is not unique but instead widley discussed in relation to all art forms music and it’s extension into video</p>
+                    <p><img src="images/sword and stone.jpg" alt="sword_and_stone" height="100%" width="100%">
+                    <p>Alison Saar - "When I'm working with specific ideas, information from cultures outside my own, I seek to understand them through my own personal experience in relation to everything I feel: my pain my understanding of love or anger, what I hope for and dream about."
+                </div>
+            </div>
+
+    </body>
+</html>
