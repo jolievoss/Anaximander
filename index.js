@@ -35,7 +35,6 @@ let computeDocHeight = function() {
     } else {
         $('#right').show();
     }
-    console.log("resized");
 }
 
 $('document').ready(computeDocHeight);
