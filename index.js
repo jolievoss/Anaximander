@@ -14,30 +14,56 @@ function hideMe(obj) {
     obj.style.visibility = 'hidden';
 }
 
+// let computeDocHeight = function() {
 
-let computeDocHeight = function() {
-    let hdr = $("#hdr").css("height");
-    hdr = parseInt(hdr.slice(0,hdr.length-2));
-    let wHeight = $(window).height()-hdr-100;
+//     if ($(window).width()<650) {
+//         $('#right').hide();
+//         $('#middle')
 
-    $('#middle').css({
-        'height' : wHeight + 'px'   
-    });
+//     } else {
+//         $('#right').show();
+//     }
+// }
 
-    wHeight = $(window).height()-hdr;
-    $('#rightscroll').css({
-        'height' : wHeight + 'px'   
-    }); 
+// $('document').ready(computeDocHeight);
 
-    if ($(window).width()<650) {
-        $('#right').hide();
+// $(window).resize(computeDocHeight);
 
-    } else {
-        $('#right').show();
+$(".workLinks").on("mouseenter", function() {
+    let work=$(this)[0].classList[1];
+    $("."+work).css("text-decoration","line-through");
+    let first = "."+work+":eq(0)";
+    let second = "."+work+":eq(1)";
+    if ($(second).length>0) {
+        $(second).animate({opacity: 0.0, "margin-left": '-100px'}, 1000, setInvisible);
+        $(second).animate({opacity: 1.0, "margin-left": '0px'}, 100, setVisible);
+        function setInvisible() {
+        $(this).css('visibility', 'hidden');
+        }
+        function setVisible() {
+        $(this).css('visibility', 'visible');
+        }
+        
+        // $(second).animate({
+        //         'marginLeft' : "-=80px" //moves left
+        //     });
+        // $(second).fadeOut('slow');
+        // $(second).animate({
+        //         'marginLeft' : "+=80px" //moves left
+        //     });
+        
+        
+        // $(second).fadeOut('slow');
+        // $(second).fadeIn('slow');
     }
-}
+    // $(second).fadeOut('slow',function() {
+    //     $(this).delay(500);
+    // });
+});
 
-$('document').ready(computeDocHeight);
+$(".workLinks").on("mouseleave", function() {
+    let work=$(this)[0].classList[1];
+    $("."+work).css("text-decoration","none");
+});
 
-$(window).resize(computeDocHeight);
 

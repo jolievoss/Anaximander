@@ -6,225 +6,241 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Yrsa" rel="stylesheet">
-
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <link rel="stylesheet" href="main.css">
 
     </head>
 
     <body style="overflow:auto">
-        <div class="container-fluid">
-            <div id="hdr" class="row">
-                <div id="hdrImg" class="col-sm-8">
-                    <a href="index.html"><img src="kyle_hdr.gif" width=350px></a>
+      <div class="row">
+                <div class="col-9">
+                    <div class="row hdr">
+                        <a href="index.html"><img id="imgHdr" src="kyle_hdr.gif" width=350px></a>
+                    </div>
+                    <div class="row">
+                        <div id="left" class="col-auto">
+                            <div id="left2">
+                            </div>
+                        </div>
+                        <div class="col-11">
+                          <div id="cv">
+                                <table style="width:50%">
+                                    <tr><td><span class="title">Kyle W. Hossli</span><p></td></tr>
+                                </table>
+                                <table style="width:50%">
+                                    <tr>
+                                       <td>Born in Newport News, Virginia, 1988</td> 
+                                    </tr>
+                                    <tr>
+                                       <td>Lives in Denver, Colorado</td> 
+                                    </tr>
+                                </table>
+                                <p></p>
+                                <table style="width:50%">
+                                    <tr><td><span class="title">EDUCATION</span><p></td></tr>
+                                </table>
+                                <table style="width:50%">
+                                    <tr>
+                                        <td class="yr">2017</td> 
+                                        <td>The University of Chicago, Chicago, IL; MFA.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="yr">2010</td> 
+                                        <td>Virginia Commonwealth University, Richmond, VA; BFA.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="yr"></td> 
+                                        <td>Virginia Commonwealth University, Richmond, VA; Minor; Crafts and Material Studies, Blown Glass </td>
+                                    </tr>
+                                </table>
+                                <p></p>
+                                <table style="width:50%">
+                                    <tr><td><span class="title">SELECTED EXHIBITIONS</span><p></td></tr>
+                                </table>
+                                <table style="width:50%">
+                                    <tr>
+                                        <td class="yr">2017</td> 
+                                        <td>What Do You Call A Rose? You Call It A Rose, Baby Blue Gallery, Chicago IL</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="yr"></td> 
+                                        <td>And, And, And, The Muffler Shop, Chicago IL</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="yr"></td> 
+                                        <td>The Institute of Recurrent Progress: The Occupation of Apt. 2, Open House Contemporary, Chicago, IL</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="yr">2016</td> 
+                                        <td>The Path is Not Linear, Blanc Gallery, Chicago, IL</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="yr">2014</td> 
+                                        <td>Are We One?, Biggin Gallery, Auburn University, Auburn, LA</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="yr">2013</td> 
+                                        <td>Union, Justice, Confidence: The Front at Vox, Vox Populi, Philadelphia, PA</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="yr">2012</td> 
+                                        <td>New Lease, The Front Gallery, New Orleans, LA</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="yr"></td> 
+                                        <td>The Recreations, Forest Park Gallery, St. Louis, MO</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="yr"></td> 
+                                        <td>Between The Tracks, Parse Gallery, New Orleans, LA</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="yr">2011</td> 
+                                        <td>Future Tenant Gallery, Pittsburgh, PA</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="yr">2010</td> 
+                                        <td>Commons Gallery, Richmond, VA</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="yr"></td> 
+                                        <td>Hang in There, Fine Arts Building VCU, Richmond, VA</td>
+                                    </tr>
+                                </table>
+                                <p></p>
+                                <table style="width:50%">
+                                    <tr><td><span class="title">TEACHING</span><p></td></tr>
+                                </table>
+                                <table style="width:50%">
+                                    <tr>
+                                        <td class="yr">2018</td> 
+                                        <td>Lecturer, Department of Visual Arts, The University of Chicago, Chicago, IL.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="yr">2017</td> 
+                                        <td>Teaching Assistant, DOVA, The University of Chicago, Chicago, IL; Geof Oppenheimer</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="yr">2016</td> 
+                                        <td>Teaching Assistant, DOVA, The University of Chicago, Chicago, IL; Sean Keller</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>Teaching Assistant, DOVA,The University of Chicago, Chicago, IL; Robert Peters</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>Teaching Assistant, DOVA, The University of Chicago, Chicago, IL; Amber Ginsburg</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>Teaching Assistant, DOVA, The University of Chicago, Chicago, IL; Carol Jackson</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="yr">2015</td> 
+                                        <td>Teaching Assistant, DOVA, The University of Chicago, Chicago, IL; Geof Oppenheimer</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="yr">2012</td> 
+                                        <td>Guest Lecturer, Fine Arts, St. Louis Community College, St. Louis, MO; Matthew Paul Isaacson</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="yr">2010</td> 
+                                        <td>Teaching Assistant, Blown Glass, Virginia Commonwealth University, Richmond, VA; Jack Wax</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td> 
+                                        <td>Guest Lecturer, Art Foundation, Virginia Commonwealth University, Richmond, VA; Johnston Foster</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="yr">2009</td> 
+                                        <td>Teaching Assistant, Basic Sculpture, Virginia Commonwealth University, Richmond, VA; Chris Deane</td>
+                                    </tr>
+                                </table>
+                                <p></p>
+                                
+                                <table style="width:50%">
+                                    <tr><td><span class="title">WORK EXPERIENCE</span><p></td></tr>
+                                </table>
+                                <table style="width:50%">
+                                    <tr>
+                                        <td class="yr">2017</td> 
+                                        <td>Fabricator and Welder, Corvus Design Build, Denver, CO</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="yr">2016</td> 
+                                        <td>Shop Technician, The Reva and David Logan Center for Arts, Chicago, IL</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="yr">2015</td> 
+                                        <td>Carpenter and Welder, Old South Building Corporation, Richmond, VA</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="yr">2014</td> 
+                                        <td>Fabricator and Installer, Two Seven Inc, Brooklyn NY</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="yr">2013</td> 
+                                        <td>Fabricator and Installer - Design Compendium, Brooklyn, NY</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="yr">&nbsp;&nbsp;&nbsp;-14</td> 
+                                        <td>Fabricator and Installer - Queens Museum, Queens, NY</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="yr">2010</td> 
+                                        <td>Art Assistant - Kendall Buster, Richmond, VA</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="yr">&nbsp;&nbsp;&nbsp;-13</td> 
+                                        <td>Art Assistant - Siemon Allen, Richmond, VA</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="yr">2012</td> 
+                                        <td>Art Handler, New Orleans Arts Council, New Orleans, LA</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="yr"></td> 
+                                        <td>Sculptor and Installer, Royal Artists, New Orleans, LA</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="yr">2011</td> 
+                                        <td>Art Assistant, Michael Jones Mckean, Richmond, VA</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="yr">2010</td> 
+                                        <td>Lighting Technician, The Virginia Museum of Fine Arts, Richmond, VA</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="yr"></td> 
+                                        <td>Art Assistant - R. Eric McMaster, Richmond, VA</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="yr"></td> 
+                                        <td>Art Assistant - Matthew Paul Isaacson, St. Louis, MO</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-4">
-                            <a class="hdrlink" href="work.html">work.</a>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <a class="hdrlink" href="cv.html">cv.</a>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <a class="hdrlink" href="#contact">ephemera.</a>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="col-3">
+                    <div class="row">
+                        <div class="hdr col" id="links">
+                            <table>
+                                <td><a class="hdrlink" href="work.html">work.</a></td>
+                                <td><a class="hdrlink" href="cv.html">cv.</a></td>
+                                <td><a class="hdrlink" href="#contact">ephemera.</a></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div id="cv">
-            <table style="width:50%">
-                <tr><td><span class="title">Kyle W. Hossli</span><p></td></tr>
-            </table>
-            <table style="width:50%">
-                <tr>
-                   <td>Born in Newport News, Virginia, 1988</td> 
-                </tr>
-                <tr>
-                   <td>Lives in Denver, Colorado</td> 
-                </tr>
-            </table>
-            <p></p>
-            <table style="width:50%">
-                <tr><td><span class="title">EDUCATION</span><p></td></tr>
-            </table>
-            <table style="width:50%">
-                <tr>
-                    <td class="yr">2017</td> 
-                    <td>The University of Chicago, Chicago, IL; MFA.</td>
-                </tr>
-                <tr>
-                    <td class="yr">2010</td> 
-                    <td>Virginia Commonwealth University, Richmond, VA; BFA.</td>
-                </tr>
-                <tr>
-                    <td class="yr"></td> 
-                    <td>Virginia Commonwealth University, Richmond, VA; Minor; Crafts and Material Studies, Blown Glass </td>
-                </tr>
-            </table>
-            
-            <p></p>
-            <table style="width:50%">
-                <tr><td><span class="title">TEACHING</span><p></td></tr>
-            </table>
-            <table style="width:50%">
-                <tr>
-                    <td class="yr">2018</td> 
-                    <td>Lecturer, Department of Visual Arts, The University of Chicago, Chicago, IL.</td>
-                </tr>
-                <tr>
-                    <td class="yr">2017</td> 
-                    <td>Teaching Assistant, DOVA, The University of Chicago, Chicago, IL;Geof Oppenheimer</td>
-                </tr>
-                <tr>
-                    <td class="yr">2016</td> 
-                    <td>Teaching Assistant, DOVA, The University of Chicago, Chicago, IL; Sean Keller</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Teaching Assistant, DOVA,The University of Chicago, Chicago, IL; Robert Peters</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Teaching Assistant, DOVA, The University of Chicago, Chicago, IL; Amber Ginsburg</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Teaching Assistant, DOVA, The University of Chicago, Chicago, IL; Carol Jackson</td>
-                </tr>
-                <tr>
-                    <td class="yr">2015</td> 
-                    <td>Teaching Assistant, DOVA, The University of Chicago, Chicago, IL; Geof Oppenheimer</td>
-                </tr>
-                <tr>
-                    <td class="yr">2012</td> 
-                    <td>Guest Lecturer, Fine Arts, St. Louis Community College, St. Louis, MO; Matthew Paul Isaacson</td>
-                </tr>
-                <tr>
-                    <td class="yr">2010</td> 
-                    <td>Teaching Assistant, Blown Glass, Virginia Commonwealth University, Richmond, VA; Jack Wax</td>
-                </tr>
-                <tr>
-                    <td></td> 
-                    <td>Guest Lecturer, Art Foundation, Virginia Commonwealth University, Richmond, VA; Johnston Foster</td>
-                </tr>
-                <tr>
-                    <td class="yr">2009</td> 
-                    <td>Teaching Assistant, Basic Sculpture, Virginia Commonwealth University, Richmond, VA; Chris Deane</td>
-                </tr>
-            </table>
-            <p></p>
-            <table style="width:50%">
-                <tr><td><span class="title">EXHIBITIONS</span><p></td></tr>
-            </table>
-            <table style="width:50%">
-                <tr>
-                    <td class="yr">2017</td> 
-                    <td>What Do You Call A Rose? You Call It A Rose, Baby Blue Gallery, Chicago IL</td>
-                </tr>
-                <tr>
-                    <td class="yr"></td> 
-                    <td>And, And, And, The Muffler Shop, Chicago IL</td>
-                </tr>
-                <tr>
-                    <td class="yr"></td> 
-                    <td>The Institute of Recurrent Progress: The Occupation of Apt. 2, Open House Contemporary, Chicago, IL</td>
-                </tr>
-                <tr>
-                    <td class="yr">2016</td> 
-                    <td>The Path is Not Linear, Blanc Gallery, Chicago, IL</td>
-                </tr>
-                <tr>
-                    <td class="yr">2014</td> 
-                    <td>Are We One?, Biggin Gallery, Auburn University, Auburn, LA</td>
-                </tr>
-                <tr>
-                    <td class="yr">2013</td> 
-                    <td>Union, Justice, Confidence: The Front at Vox, Vox Populi, Philadelphia, PA</td>
-                </tr>
-                <tr>
-                    <td class="yr">2012</td> 
-                    <td>New Lease, The Front Gallery, New Orleans, LA</td>
-                </tr>
-                <tr>
-                    <td class="yr"></td> 
-                    <td>The Recreations, Forest Park Gallery, St. Louis, MO</td>
-                </tr>
-                <tr>
-                    <td class="yr"></td> 
-                    <td>Between The Tracks, Parse Gallery, New Orleans, LA</td>
-                </tr>
-                <tr>
-                    <td class="yr">2011</td> 
-                    <td>Future Tenant Gallery, Pittsburgh, PA</td>
-                </tr>
-                <tr>
-                    <td class="yr">2010</td> 
-                    <td>Commons Gallery, Richmond, VA</td>
-                </tr>
-                <tr>
-                    <td class="yr"></td> 
-                    <td>Hang in There, Fine Arts Building VCU, Richmond, VA</td>
-                </tr>
-            </table>
-            <p></p>
-            <table style="width:50%">
-                <tr><td><span class="title">WORK EXPERIENCE</span><p></td></tr>
-            </table>
-            <table style="width:50%">
-                <tr>
-                    <td class="yr">2017</td> 
-                    <td>Fabricator and Welder, Corvus Design Build, Denver, CO</td>
-                </tr>
-                <tr>
-                    <td class="yr">2016</td> 
-                    <td>Shop Technician, The Reva and David Logan Center for Arts, Chicago, IL</td>
-                </tr>
-                <tr>
-                    <td class="yr">2015</td> 
-                    <td>Carpenter and Welder, Old South Building Corporation, Richmond, VA</td>
-                </tr>
-                <tr>
-                    <td class="yr">2014</td> 
-                    <td>Fabricator and Installer, Two Seven Inc, Brooklyn NY</td>
-                </tr>
-                <tr>
-                    <td class="yr">2013</td> 
-                    <td>Fabricator and Installer - Design Compendium, Brooklyn, NY</td>
-                </tr>
-                <tr>
-                    <td class="yr">&nbsp;&nbsp;&nbsp;-14</td> 
-                    <td>Fabricator and Installer - Queens Museum, Queens, NY</td>
-                </tr>
-                <tr>
-                    <td class="yr">2010</td> 
-                    <td>Art Assistant - Kendall Buster, Richmond, VA</td>
-                </tr>
-                <tr>
-                    <td class="yr">&nbsp;&nbsp;&nbsp;-13</td> 
-                    <td>Art Assistant - Siemon Allen, Richmond, VA</td>
-                </tr>
-                <tr>
-                    <td class="yr">2012</td> 
-                    <td>Art Handler, New Orleans Arts Council, New Orleans, LA</td>
-                </tr>
-                <tr>
-                    <td class="yr"></td> 
-                    <td>Sculptor and Installer, Royal Artists, New Orleans, LA</td>
-                </tr>
-                <tr>
-                    <td class="yr">2011</td> 
-                    <td>Art Assistant, Michael Jones Mckean, Richmond, VA</td>
-                </tr>
-                <tr>
-                    <td class="yr">2010</td> 
-                    <td>Lighting Technician, The Virginia Museum of Fine Arts, Richmond, VA</td>
-                </tr>
-                <tr>
-                    <td class="yr"></td> 
-                    <td>Art Assistant - R. Eric McMaster, Richmond, VA</td>
-                </tr>
-                <tr>
-                    <td class="yr"></td> 
-                    <td>Art Assistant - Matthew Paul Isaacson, St. Louis, MO</td>
-                </tr>
-            </table>
-        </div>     
+        </div> 
+
+        
         <script type="text/javascript" src="index.js"> </script>
     </body>
 </html>

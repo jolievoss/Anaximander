@@ -3,7 +3,7 @@ body {
     margin: 10px;
     color: #000000;
     font-family: 'Yrsa', arial,serif;
-    overflow:hidden;
+    /*overflow:hidden;*/
     height:100%;
     font-size: 12px;
     line-height: 16px;
@@ -13,53 +13,72 @@ body {
     display: flex;
     align-items: left;
     justify-content: left;
-    margin-top:  -150px;
+    margin-top:  50px;
     margin-left:  300px;
     z-index: 99;
-    position: relative;
+    position: fixed;
 }
 
-#hdr {
+.hdr {
 	align-items: left;
 	justify-content: left;
+	position:fixed;
+	z-index: 80;
 }
-
-#main {
-}
-
-
-#left, #middle, #rightscroll {
-	overflow-y:scroll;
+#left, #middle, #middle2{
+	top: 150px;
+	position:relative;
+	/*overflow-y:scroll;*/
 	-webkit-overflow-scrolling: touch;
     -ms-overflow-style: none;
 }
 
+#middle2 {
+	margin-top: 70px;
+	position:fixed;
+	overflow:hidden;
+	left:50px;
+	font-weight: bold;
+	z-index:99;
+}
+
+#left2 {
+	position: fixed;
+	margin-left: -10px;
+	margin-top: 50px;
+}
+
 #left::-webkit-scrollbar,
 #middle::-webkit-scrollbar,
-#rightscroll::-webkit-scrollbar {
+#right::-webkit-scrollbar {
     display: none;
 }
 
 #right {
-	background-color: #efefef;
+	top: 100px;
+	right:20px;
 	padding: 20px;
-	margin-top: -100px;
-	height:2000px;
-}
+	background-color: #efefef;
+	bottom:0;
+    position:fixed;
+    overflow-y:scroll;
+    overflow-x:hidden;
 
-#rightscroll {
-	padding:5px;
+}
+.workLinks {
+	font-weight: bold;
+	background-color: transparent;
 }
 
 a{
-    color: #535565;
     text-decoration: none;
-}
+    color: black;
+	cursor: pointer;
 
+}
 a:hover {
-    text-decoration: none;
-    transition:.5s;
-    color: #efefef;
+    text-decoration: line-through;
+    color: black;
 }
 
 td {
@@ -67,12 +86,9 @@ td {
 }
 
 #cv {
-	margin-top: 20px;
-	display:flex;
-	flex-direction:column;	
-	align-items:center;
-	justify-content: center;
-	text-align: left;
+	margin-top: 200px;
+	margin-left: 200px;
+	width:800px;
 }
 
 .title {
@@ -95,3 +111,29 @@ td {
     width: 80%;
     height:80%;
 }
+
+@media (max-width:650px)  {
+	#middle {
+		margin-left: 15%;
+	}
+	#middle2 {
+		top:100px;
+	}
+	#overlay {
+		margin-left:150px;
+	}
+	#left {
+		margin-top: -50px;
+	}
+	#imgHdr {
+		width: 250px;
+	}
+	#links {
+		left:50px;
+		top: 100px;
+	}
+	#cv {
+		margin-left: 0;
+	}
+}
+
