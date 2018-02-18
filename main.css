@@ -1,0 +1,97 @@
+html,
+body {
+    margin: 10px;
+    color: #000000;
+    font-family: 'Yrsa', arial,serif;
+    overflow:hidden;
+    height:100%;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+#overlay{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    margin-top:  -150px;
+    margin-left:  300px;
+    z-index: 99;
+    position: relative;
+}
+
+#hdr {
+	align-items: left;
+	justify-content: left;
+}
+
+#main {
+}
+
+
+#left, #middle, #rightscroll {
+	overflow-y:scroll;
+	-webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+}
+
+#left::-webkit-scrollbar,
+#middle::-webkit-scrollbar,
+#rightscroll::-webkit-scrollbar {
+    display: none;
+}
+
+#right {
+	background-color: #efefef;
+	padding: 20px;
+	margin-top: -100px;
+	height:2000px;
+}
+
+#rightscroll {
+	padding:5px;
+}
+
+a{
+    color: #535565;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    transition:.5s;
+    color: #efefef;
+}
+
+td {
+	padding-right: 10px;
+}
+
+#cv {
+	margin-top: 20px;
+	display:flex;
+	flex-direction:column;	
+	align-items:center;
+	justify-content: center;
+	text-align: left;
+}
+
+.title {
+	font-size: 18px;
+	font-weight: bold;
+}
+.yr {
+	color: #AAAAAA;
+}
+
+
+#largeImgPanel {
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    position: fixed;
+    z-index: 100;
+    top: 5vh;
+    left: 5vh;
+    width: 80%;
+    height:80%;
+}

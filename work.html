@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html
+    <head>
+        <meta charset="utf-8">
+        <title>Kyle's Art Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Yrsa" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <link rel="stylesheet" href="main.css">                        
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <div id="hdr" class="row panel">
+                <div id="hdrImg" class="col-sm-8">
+                    <a href="index.html"><img src="kyle_hdr.gif" width=350px></a>
+                </div>
+                <div class="col-sm-4">
+                            <a class="hdrlink" href="work.html">work.</a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a class="hdrlink" href="cv.html">cv.</a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a class="hdrlink" href="#contact">ephemera.</a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </div>
+                </div>
+            </div>
+            <div id="overlay">
+                <img src="sword.png" width="100px">
+            </div>
+            <div id="main" class="row">
+                <div class="col-auto" id="left">
+                    test <br>
+                    test <br>
+                    test <br>
+                </div>
+                <div class="col-7" id="middle">
+
+                    <div id="work">
+                        <p><img class = "inlineImg" width="100%" src="mix 5.jpg" alt="mix 5" style="cursor:pointer" onclick="showImage('mix 5.jpg');">
+                        <div id="largeImgPanel" onclick="hideMe(this);">
+                        <img id="largeImg" style="height: 100%">
+                        </div></p>
+
+                        <p>KWH installation University of Chicago. 2015.</p>
+
+                        <p><img src="KWH.jpg" width="100%" style="cursor:pointer" onclick="showImage('KWH.jpg');">
+                        <div id="largeImgPanel" onclick="hideMe(this);">
+                        <img id="largeImg" style="height: 100%">
+                        </div></p>
+                        <p>KWH installation University of Chicago. 2015.</p>
+
+                    </div>
+
+                </div>
+                
+                <div class="col-4" id="right">
+                    <div id ="rightscroll">
+                        <center><b><span style='font-size: 2rem;'>KWH. PAINTING</span></b></center>
+                        <p> A trend that presented itself in the critical statements of memebers of my university was to question an aritist’s association with particular imagery. This is not unique but instead widley discussed in relation to all art forms music and it’s extension into video</p>
+                        <p><img src="sword and stone.jpg" alt="sword_and_stone" height="100%" width="100%">
+                        <p>Alison Saar - "When I'm working with specific ideas, information from cultures outside my own, I seek to understand them through my own personal experience in relation to everything I feel: my pain my understanding of love or anger, what I hope for and dream about."
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="index.js"> </script>
+        
+    </body>
+</html>
