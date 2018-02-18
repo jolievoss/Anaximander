@@ -14,20 +14,20 @@ function hideMe(obj) {
     obj.style.visibility = 'hidden';
 }
 
-// let computeDocHeight = function() {
+let computeDocHeight = function() {
 
-//     if ($(window).width()<650) {
-//         $('#right').hide();
-//         $('#middle')
+    if ($(window).width()<650) {
+        $('#right').hide();
+        $('#middle')
 
-//     } else {
-//         $('#right').show();
-//     }
-// }
+    } else {
+        $('#right').show();
+    }
+}
 
 // $('document').ready(computeDocHeight);
 
-// $(window).resize(computeDocHeight);
+$(window).resize(computeDocHeight);
 
 $(".workLinks").on("mouseenter", function() {
     let work=$(this)[0].classList[1];
@@ -35,8 +35,8 @@ $(".workLinks").on("mouseenter", function() {
     let first = "."+work+":eq(0)";
     let second = "."+work+":eq(1)";
     if ($(second).length>0) {
-        $(second).animate({opacity: 0.0, "margin-left": '-100px'}, 1000, setInvisible);
-        $(second).animate({opacity: 1.0, "margin-left": '0px'}, 100, setVisible);
+        $(second).animate({opacity: 0.0, "margin-left": '-100px'}, 800, setInvisible);
+        $(second).animate({opacity: 1.0, "margin-left": '0px'}, 10, setVisible);
         function setInvisible() {
         $(this).css('visibility', 'hidden');
         }
