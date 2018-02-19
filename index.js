@@ -1,10 +1,49 @@
 function showImage(imgName) {
     document.getElementById('largeImg').src = imgName;
-    showLargeImagePanel();
+    showLargeImagePanel(imgName);
+    document.getElementById('largeImgPanel').style.visibility = 'visible';
     unselectAll();
 }
-function showLargeImagePanel() {
-    document.getElementById('largeImgPanel').style.visibility = 'visible';
+function showLargeImagePanel(imgName) {
+
+    let imgH, imgW, w2, h2;
+    for (let i=0; i<$("#middle img.fig").length; ++i) {
+        let item = $("#middle img.fig:eq("+i+")");
+        if (item.attr("src")==imgName) {
+            imgH = $(item).css("height");
+            imgH = parseInt(imgH.slice(0,imgH.length-2));
+            imgW = $(item).css("width");
+            imgW = parseInt(imgW.slice(0,imgW.length-2));
+        }
+    }
+
+    let w = $(window).width();
+    let h = $(window).height();
+
+    if (w<h || (w>h && w/h<imgW/imgH)) {
+        
+        if (imgW>imgH) {
+            h2 = w*(imgH/imgW);
+        } else {
+            h2 = w*(imgW/imgH);
+        }
+
+        $("#largeImgPanel").css("width",w2);
+        $("#largeImgPanel").css("height",h2);
+        $("#largeImgPanel").css("top",(h-h2)/2);
+        $("#largeImgPanel").css("left",0);
+    } else {
+        
+        if (imgW>imgH) {
+            w2 = h*(imgW/imgH);
+        } else {
+            w2 = h*(imgH/imgW);
+        }
+        $("#largeImgPanel").css("height",h);
+        $("#largeImgPanel").css("width",w2);
+        $("#largeImgPanel").css("left",(w-w2)/2);
+        $("#largeImgPanel").css("top",0);
+    }
 }
 function unselectAll() {
     if(document.selection) document.selection.empty();
@@ -23,9 +62,16 @@ let computeDocHeight = function() {
     } else {
         $('#right').show();
     }
+    if (document.getElementById('largeImgPanel').style.visibility == 'visible') {
+        showLargeImagePanel($("#largeImg").attr("src"));
+    }
+    // let h = $(window).height();
+    // let hdr = $("#imgHdr").css("height");
+    // let hdrHeight = parseInt(hdr.slice(0,hdr.length-2));
+    // $("#left2").css("height",h-hdrHeight-40);
 }
 
-// $('document').ready(computeDocHeight);
+$(document).ready(computeDocHeight);
 
 $(window).resize(computeDocHeight);
 
@@ -43,27 +89,10 @@ $(".workLinks").on("mouseenter", function() {
         function setVisible() {
         $(this).css('visibility', 'visible');
         }
-        
-        // $(second).animate({
-        //         'marginLeft' : "-=80px" //moves left
-        //     });
-        // $(second).fadeOut('slow');
-        // $(second).animate({
-        //         'marginLeft' : "+=80px" //moves left
-        //     });
-        
-        
-        // $(second).fadeOut('slow');
-        // $(second).fadeIn('slow');
     }
-    // $(second).fadeOut('slow',function() {
-    //     $(this).delay(500);
-    // });
 });
 
 $(".workLinks").on("mouseleave", function() {
     let work=$(this)[0].classList[1];
     $("."+work).css("text-decoration","none");
 });
-
-
