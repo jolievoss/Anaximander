@@ -14,11 +14,17 @@ function showLargeImagePanel(imgName) {
             imgH = parseInt(imgH.slice(0,imgH.length-2));
             imgW = $(item).css("width");
             imgW = parseInt(imgW.slice(0,imgW.length-2));
+            break;
         }
     }
 
     let w = $(window).width();
     let h = $(window).height();
+
+    if (imgH==undefined) {
+        imgH = h;
+        imgW = w;
+    }
 
     if (w<h || (w>h && w/h<imgW/imgH)) {
         
@@ -72,6 +78,7 @@ let computeDocHeight = function() {
 }
 
 $(document).ready(computeDocHeight);
+$(document).ready(showLargeImagePanel("test"));
 
 $(window).resize(computeDocHeight);
 
