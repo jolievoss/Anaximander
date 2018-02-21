@@ -37,7 +37,7 @@ function setup() {
   
   
   
-  // let font = loadFont("assets/seinfold/SourceCodePro-Regular.ttf", 64);
+  let font = loadFont("assets/seinfold/SourceCodePro-Regular.ttf", 64);
   textFont(font);
 }
 
