@@ -23,7 +23,7 @@ public void setup() {
   yLoc = height/2;
   zLoc = 0;
   
-  rocket = loadShape("mesh.obj");
+  rocket = loadShape("assets/seinfold/mesh.obj");
   rocket.scale(30);
   rocket.rotateX(PI/2 + 0.2);
   rocket.rotateZ(PI/2);

@@ -38,7 +38,7 @@ function setup() {
   
   
   // let font = loadFont("assets/seinfold/SourceCodePro-Regular.ttf", 64);
-  // textFont(font);
+  textFont(font);
 }
 
 function windowResized() {
@@ -58,35 +58,35 @@ function draw() {
   rotateX(rx);
   model(rocket);
   
-  if(spin){
+  if (spin) {
   
-    if(count%1 == 0){
+    if (count%1 == 0) {
       ry += 0.015;
     }
     
     //stunt 1
     
-    if(count > 100 && count < 225){
+    if (count > 100 && count < 225){
       rz -= count%2*0.01;
     }
     
-    if(count > 100 && count < 225){
+    if (count > 100 && count < 225){
       rz += (count+1)%2*0.01;
     }
     
     //stunt 2
     
-    if(count > 150 && count < 225){
+    if (count > 150 && count < 225){
       yLoc -= count%2*3;
     }
     
-    if(count > 150 && count < 225){
+    if (count > 150 && count < 225){
       yLoc += (count+1)%2*3;
     }
     
     //stunt 3
     
-    if(count > 201 && count < 225){
+    if (count > 201 && count < 225){
       ry -= 1;
     }
     
@@ -102,39 +102,40 @@ function draw() {
   
   //cash counter
   
-  // text("$" + cashCount, -200, -100 + cashBump);
-  //text("$" + cashCount, 100, +200 + cashBump);
+  text("$" + cashCount, -200, -100 + cashBump);
+  text("$" + cashCount, 100, +200 + cashBump);
 }
 
-// function keyPressed(){
+function keyPressed(){
   
-//   if(keyCode==32){
-//     if(spin){
-//       spin = false;
-//     }
+  if(keyCode==32){
+    if(spin){
+      spin = false;
+    }
   
-//     else if(!spin){
-//       spin = true;
-//     }
-//   }
+    else if(!spin){
+      spin = true;
+    }
+  }
   
-//   if(keyCode==37){
-//     cashCount -= 1;
-//     cashBump = 5;    
-//   }
+  if(keyCode==37){
+    cashCount -= 1;
+    cashBump = 5;    
+  }
   
-//   if(keyCode==39){
-//     cashCount += 1;
-//     cashBump = -5;
-//   }
-// }
-// function keyReleased(){
+  if(keyCode==39){
+    cashCount += 1;
+    cashBump = -5;
+  }
+}
+
+function keyReleased(){
   
-//   if(keyCode==37){
-//     cashBump = 0;    
-//   }
+  if(keyCode==37){
+    cashBump = 0;    
+  }
   
-//   if(keyCode==39){
-//     cashBump = 0;
-//   }
-// }
+  if(keyCode==39){
+    cashBump = 0;
+  }
+}
