@@ -48,7 +48,8 @@ body {
 	margin-top: 50px;
 	overflow-y:scroll;
 }
-
+.hdr::-webkit-scrollbar
+#left2::-webkit-scrollbar,
 #left::-webkit-scrollbar,
 #middle::-webkit-scrollbar,
 #right::-webkit-scrollbar {
