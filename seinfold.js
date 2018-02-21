@@ -37,8 +37,8 @@ function setup() {
   
   
   
-  let font = loadFont("assets/seinfold/SourceCodePro-Regular.ttf", 64);
-  textFont(font);
+  // let font = loadFont("assets/seinfold/SourceCodePro-Regular.ttf", 64);
+  // textFont(font);
 }
 
 function windowResized() {
@@ -102,40 +102,40 @@ function draw() {
   
   //cash counter
   
-  text("$" + cashCount, -200, -100 + cashBump);
-  text("$" + cashCount, 100, +200 + cashBump);
+  // text("$" + cashCount, -200, -100 + cashBump);
+  // text("$" + cashCount, 100, +200 + cashBump);
 }
 
-function keyPressed(){
+// function keyPressed(){
   
-  if(keyCode==32){
-    if(spin){
-      spin = false;
-    }
+//   if(keyCode==32){
+//     if(spin){
+//       spin = false;
+//     }
   
-    else if(!spin){
-      spin = true;
-    }
-  }
+//     else if(!spin){
+//       spin = true;
+//     }
+//   }
   
-  if(keyCode==37){
-    cashCount -= 1;
-    cashBump = 5;    
-  }
+//   if(keyCode==37){
+//     cashCount -= 1;
+//     cashBump = 5;    
+//   }
   
-  if(keyCode==39){
-    cashCount += 1;
-    cashBump = -5;
-  }
-}
+//   if(keyCode==39){
+//     cashCount += 1;
+//     cashBump = -5;
+//   }
+// }
 
-function keyReleased(){
+// function keyReleased(){
   
-  if(keyCode==37){
-    cashBump = 0;    
-  }
+//   if(keyCode==37){
+//     cashBump = 0;    
+//   }
   
-  if(keyCode==39){
-    cashBump = 0;
-  }
-}
+//   if(keyCode==39){
+//     cashBump = 0;
+//   }
+// }
