@@ -22,7 +22,7 @@ function setup() {
   let w = $("#middle").css("width");
   w = parseInt(w.slice(0,w.length-2))-50;
   canvas = createCanvas(w,w*.75, WEBGL);
-  canvas.parent('middle');
+  canvas.parent('seinfold');
   frameRate(25);
   
   xLoc = 0; //width/2;
