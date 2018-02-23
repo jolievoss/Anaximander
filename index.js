@@ -1,3 +1,7 @@
+let parseNum = function(str) {
+    return parseFloat(str.slice(0,str.length-2));
+}
+
 function showImage(imgName) {
     document.getElementById('largeImg').src = imgName;
     showLargeImagePanel(imgName);
@@ -10,10 +14,8 @@ function showLargeImagePanel(imgName) {
     for (let i=0; i<$("#middle img.fig").length; ++i) {
         let item = $("#middle img.fig:eq("+i+")");
         if (item.attr("src")==imgName) {
-            imgH = $(item).css("height");
-            imgH = parseInt(imgH.slice(0,imgH.length-2));
-            imgW = $(item).css("width");
-            imgW = parseInt(imgW.slice(0,imgW.length-2));
+            imgH = parseNum($(item).css("height"));
+            imgW = parseNum($(item).css("width"));
             break;
         }
     }
@@ -26,29 +28,26 @@ function showLargeImagePanel(imgName) {
         imgW = w;
     }
 
-    if (w<h || (w>h && w/h<imgW/imgH)) {
+    if (imgW>imgH && (w<h || (w>h && w/h<imgW/imgH))) {
         
-        if (imgW>imgH) {
-            h2 = w*(imgH/imgW);
-        } else {
-            h2 = w*(imgW/imgH);
-        }
-
-        $("#largeImgPanel").css("width",w2);
+        h2 = w*(imgH/imgW);
         $("#largeImgPanel").css("height",h2);
+        $("#largeImgPanel").css("width",w);
         $("#largeImgPanel").css("top",(h-h2)/2);
         $("#largeImgPanel").css("left",0);
+
+        $("#largeImg").css("height",h2-4);
+        $("#largeImg").css("width",w-4);
     } else {
         
-        if (imgW>imgH) {
-            w2 = h*(imgW/imgH);
-        } else {
-            w2 = h*(imgH/imgW);
-        }
-        $("#largeImgPanel").css("height",h);
+        w2 = h*(imgW/imgH);
         $("#largeImgPanel").css("width",w2);
+        $("#largeImgPanel").css("height",h);
         $("#largeImgPanel").css("left",(w-w2)/2);
         $("#largeImgPanel").css("top",0);
+
+        $("#largeImg").css("width",w2-4);
+        $("#largeImg").css("height",h-4);
     }
 }
 function unselectAll() {
@@ -71,16 +70,11 @@ let computeDocHeight = function() {
     if (document.getElementById('largeImgPanel').style.visibility == 'visible') {
         showLargeImagePanel($("#largeImg").attr("src"));
     }
-    // let h = $(window).height();
-    // let hdr = $("#imgHdr").css("height");
-    // let hdrHeight = parseInt(hdr.slice(0,hdr.length-2));
-    // $("#left2").css("height",h-hdrHeight-40);
+    let h = $(window).height();
+    let hdrHeight = parseNum($("#imgHdr").css("height"));
+    $("#left2").css("height",h-hdrHeight-50);
+
 }
-
-$(document).ready(computeDocHeight);
-$(document).ready(showLargeImagePanel("test"));
-
-$(window).resize(computeDocHeight);
 
 $(".workLinks").on("mouseenter", function() {
     let work=$(this)[0].classList[1];
@@ -103,3 +97,8 @@ $(".workLinks").on("mouseleave", function() {
     let work=$(this)[0].classList[1];
     $("."+work).css("text-decoration","none");
 });
+
+$(computeDocHeight);
+$(showLargeImagePanel("test"));
+
+$(window).resize(computeDocHeight);

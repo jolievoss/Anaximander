@@ -14,8 +14,8 @@ let xLoc, yLoc, zLoc, count = 1, maxCount = 500, cashCount = 0, cashBump = 0;
 let spin = true;
 
 function preload() {
-  rocket = loadModel("assets/seinfold/mesh.obj",true);
-  img = loadImage("assets/seinfold/Elizabeth.png");
+  rocket = loadModel("assets/FS/mesh.obj",true);
+  // img = loadImage("assets/FS/Elizabeth.png");
 }
   
 function setup() {

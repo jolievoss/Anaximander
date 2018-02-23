@@ -7,6 +7,7 @@ body {
     height:100%;
     font-size: 12px;
     line-height: 16px;
+    overflow: scroll;
 }
 
 #overlay{
@@ -19,12 +20,20 @@ body {
     position: fixed;
 }
 
+/*#links {
+	right: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}*/
+
 .hdr {
 	align-items: left;
 	justify-content: left;
 	position:fixed;
 	z-index: 80;
 }
+
 #left, #middle, #middle2{
 	top: 150px;
 	position:relative;
@@ -48,12 +57,12 @@ body {
 	margin-top: 50px;
 	overflow-y:scroll;
 }
-.hdr::-webkit-scrollbar
-#left2::-webkit-scrollbar,
-#left::-webkit-scrollbar,
-#middle::-webkit-scrollbar,
-#right::-webkit-scrollbar {
-    display: none;
+
+#left3 {
+	position: fixed;
+	margin-left: -10px;
+	margin-top: 50px;
+	overflow-y:scroll;
 }
 
 #right {
@@ -69,10 +78,23 @@ body {
 
 }
 
+.hdr::-webkit-scrollbar,
+body::-webkit-scrollbar,
+#left2::-webkit-scrollbar,
+#left::-webkit-scrollbar,
+#middle::-webkit-scrollbar,
+#middle2::-webkit-scrollbar,
+#right::-webkit-scrollbar {
+    display: none;
+}
 
 .workLinks {
 	font-weight: bold;
 	background-color: transparent;
+}
+
+.fig {
+	border: 1px solid black;
 }
 
 a{
@@ -111,6 +133,7 @@ td {
     z-index: 100;
     top: 0;
     left: 0;
+    border: 2px solid black;
 }
 
 @media (max-width:650px)  {
