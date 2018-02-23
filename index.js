@@ -62,7 +62,7 @@ let computeDocHeight = function() {
 
     if ($(window).width()<650) {
         $('#right').hide();
-        $('#middle')
+        $('#middle');
 
     } else {
         $('#right').show();
@@ -73,6 +73,18 @@ let computeDocHeight = function() {
     let h = $(window).height();
     let hdrHeight = parseNum($("#imgHdr").css("height"));
     $("#left2").css("height",h-hdrHeight-50);
+
+    if ($(".video").length != 0) {
+        let width = parseNum($("#middle").css("width"))
+        $(".video").css("width",width);
+        $(".video").css("height",width*.5625);
+    }
+
+    if ($(".video2").length != 0) {
+        let width = parseNum($("#middle").css("width"))/3-10;
+        $(".video2").css("width",width)
+        $(".video2").css("height",width*.5625)
+    }
 
 }
 

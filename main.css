@@ -3,6 +3,9 @@ body {
     margin: 10px;
     color: #000000;
     font-family: 'Yrsa', arial,serif;
+    text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
     /*overflow:hidden;*/
     height:100%;
     font-size: 12px;
@@ -76,6 +79,11 @@ body {
     overflow-x:hidden;
     font-size: 14px;
 
+}
+
+#videos {
+	display:flex;
+	margin-bottom: 50px;
 }
 
 .hdr::-webkit-scrollbar,
