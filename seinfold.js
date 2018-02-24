@@ -44,7 +44,7 @@ function setup() {
 function windowResized() {
 
   let w = $("#middle").css("width");
-  w = parseInt(w.slice(0,w.length-2))-50;
+  w = parseInt(w.slice(0,w.length-2))-30;
   resizeCanvas(w,w*.75);
 }
 
