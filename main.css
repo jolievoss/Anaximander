@@ -1,31 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Yrsa');
 html,
 body {
     margin: 10px;
     color: #000000;
-    font-family: 'Yrsa', arial,serif;
+    font-family: 'Yrsa', arial, sans-serif;
     text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-    /*overflow:hidden;*/
     height:100%;
     font-size: 12px;
     line-height: 16px;
     overflow: scroll;
+    position:relative;
 }
 
-#overlay {
-    display: flex;
-    width: 100px;
-    align-items: left;
-    justify-content: left;
-    margin-top:  50px;
-    margin-left:  300px;
-    z-index: 99;
-    position: fixed;
+.hdr::-webkit-scrollbar,
+body::-webkit-scrollbar,
+#leftInner::-webkit-scrollbar,
+#left::-webkit-scrollbar,
+#middle::-webkit-scrollbar,
+#middle2::-webkit-scrollbar,
+#right::-webkit-scrollbar {
+    display: none;
 }
 
-h3 {
-	margin-bottom: 15px;
+a{
+    text-decoration: none;
+    color: black;
+	cursor: pointer;
+
+}
+
+a:hover {
+    text-decoration: line-through;
+    color: black;
+}
+
+.workLinks {
+	font-weight: bold;
+	background-color: transparent;
 }
 
 .hdr {
@@ -35,38 +49,46 @@ h3 {
 	z-index: 80;
 }
 
-#left, #middle, #middle2{
+#left, #middle, #middleLinks, #ephMain{
 	top: 150px;
 	position:relative;
-	/*overflow-y:scroll;*/
 	-webkit-overflow-scrolling: touch;
     -ms-overflow-style: none;
+}
+
+#left {
+	font-family: futura, 'Lato';
+}
+
+#leftInner {
+	position: fixed;
+	margin-left: -10px;
+	margin-top: 50px;
+	overflow-y:scroll;
+	font-family: futura, 'Lato';
 }
 
 #middle {
 	overflow-y:scroll;
 }
-#middle2 {
+
+#middleLinks {
 	margin-top: 70px;
 	position:fixed;
 	overflow:hidden;
 	left:50px;
 	font-weight: bold;
 	z-index:99;
+	font-family: futura, 'Lato';
 }
 
-#left2 {
-	position: fixed;
-	margin-left: -10px;
-	margin-top: 50px;
-	overflow-y:scroll;
+h3 {
+	margin-bottom: 30px;
 }
 
-#left3 {
-	position: fixed;
-	margin-left: -10px;
-	margin-top: 50px;
-	overflow-y:scroll;
+.titleLine {
+	border-top: 1px solid black;
+	margin-bottom: 30px;
 }
 
 #right {
@@ -75,14 +97,14 @@ h3 {
 	padding: 20px;
 	background-color: #efefef;
 	bottom:0;
+	font-family: futura, 'Lato';
     position:fixed;
-    text-align: justify;
+    /*text-align: justify;*/
     overflow-y:scroll;
     overflow-x:hidden;
     font-size: 14px;
     line-height: 20px;
     border: 1px solid black;
-
 }
 
 #videos {
@@ -90,40 +112,19 @@ h3 {
 	margin-bottom: 50px;
 }
 
-.hdr::-webkit-scrollbar,
-body::-webkit-scrollbar,
-#left2::-webkit-scrollbar,
-#left::-webkit-scrollbar,
-#middle::-webkit-scrollbar,
-#middle2::-webkit-scrollbar,
-#right::-webkit-scrollbar {
-    display: none;
+.cvTable {
+	width: 50%;
 }
-
-.workLinks {
-	font-weight: bold;
-	background-color: transparent;
-}
-
-
-a{
-    text-decoration: none;
-    color: black;
-	cursor: pointer;
-
-}
-a:hover {
-    text-decoration: line-through;
-    color: black;
-}
-
 td {
 	padding-right: 10px;
 }
 
 #cv {
-	margin-top: 50px;
-	width:800px;
+	margin-top: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
 .title {
@@ -134,19 +135,21 @@ td {
 	color: #AAAAAA;
 }
 
+#ephMain {
+	left: 25%;
+	overflow: scroll;
+}
 .eph {
 	position:fixed;
 	border: 1px solid black;
 }
+
 #largeImgPanel {
-    /*align-items: center;*/
-    /*justify-content: center;*/
     visibility: hidden;
     position: fixed;
     z-index: 100;
     top: 0;
     left: 0;
-    /*background-color: white;*/
     border: 2px solid black;
 }
 
@@ -160,18 +163,18 @@ canvas {
   z-index: -9999;
 }
 
-@media (max-width:650px)  {
+@media (max-width:800px)  {
 	#middle {
 		margin-left: 15%;
 	}
-	#middle2 {
+	#middleLinks {
 		top:100px;
-	}
-	#overlay {
-		margin-left:150px;
 	}
 	#left {
 		margin-top: -50px;
+	}
+	#right {
+		visibility: hidden;
 	}
 	#imgHdr {
 		width: 250px;
@@ -181,7 +184,21 @@ canvas {
 		top: 100px;
 	}
 	#cv {
+		display: block;
+		align-items: left;
+		justify-content: left;
 		margin-left: 0;
-		margin-top:0px;
+	}
+	.cvTable {
+		width: 90%;
+	}
+
+	#ephMain {
+		left: 20px;
+		overflow: scroll;
+	}
+	.eph {
+		position: relative;
+		border: 1px solid black;
 	}
 }

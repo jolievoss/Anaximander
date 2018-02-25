@@ -29,7 +29,7 @@ function showLargeImagePanel(imgName) {
     }
 
     if (imgW>imgH && (w<h || (w>h && w/h<imgW/imgH))) {
-        
+        // w -=10;
         h2 = w*(imgH/imgW);
         $("#largeImgPanel").css("height",h2);
         $("#largeImgPanel").css("width",w);
@@ -39,7 +39,7 @@ function showLargeImagePanel(imgName) {
         $("#largeImg").css("height",h2-4);
         $("#largeImg").css("width",w-4);
     } else {
-        
+        // h -= 10;
         w2 = h*(imgW/imgH);
         $("#largeImgPanel").css("width",w2);
         $("#largeImgPanel").css("height",h);
@@ -60,13 +60,6 @@ function hideMe(obj) {
 
 let computeDocHeight = function() {
 
-    if ($(window).width()<650) {
-        $('#right').hide();
-        $('#middle');
-
-    } else {
-        $('#right').show();
-    }
     if (document.getElementById('largeImgPanel').style.visibility == 'visible') {
         showLargeImagePanel($("#largeImg").attr("src"));
     }
