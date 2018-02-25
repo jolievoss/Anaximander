@@ -142,6 +142,9 @@ td {
 .eph {
 	position:fixed;
 	border: 1px solid black;
+	z-index: 100;
+	margin: 5px;
+	visibility: hidden;
 }
 
 #largeImgPanel {
