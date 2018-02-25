@@ -14,8 +14,8 @@ function showLargeImagePanel(imgName) {
     for (let i=0; i<$("#middle img.fig").length; ++i) {
         let item = $("#middle img.fig:eq("+i+")");
         if (item.attr("src")==imgName) {
-            imgH = parseNum($(item).css("height"));
-            imgW = parseNum($(item).css("width"));
+            imgH = $(item).height();
+            imgW = $(item).width();
             break;
         }
     }
@@ -71,17 +71,17 @@ let computeDocHeight = function() {
         showLargeImagePanel($("#largeImg").attr("src"));
     }
     let h = $(window).height();
-    let hdrHeight = parseNum($("#imgHdr").css("height"));
+    let hdrHeight = $("#imgHdr").height();
     $("#left2").css("height",h-hdrHeight-50);
 
     if ($(".video").length != 0) {
-        let width = parseNum($("#middle").css("width"))
+        let width = $("#middle").width();
         $(".video").css("width",width);
         $(".video").css("height",width*.5625);
     }
 
     if ($(".video2").length != 0) {
-        let width = parseNum($("#middle").css("width"))/3-10;
+        let width = $("#middle").width()/3;
         $(".video2").css("width",width)
         $(".video2").css("height",width*.5625)
     }
