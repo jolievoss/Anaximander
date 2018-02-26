@@ -19,8 +19,7 @@ function preload() {
 }
   
 function setup() {
-  let w = $("#middle").css("width");
-  w = parseInt(w.slice(0,w.length-2))-30;
+  let w = parseNum($("#middle").css("width"))-30;
   canvas = createCanvas(w,w*.75, WEBGL);
   canvas.parent('seinfold');
   frameRate(25);
@@ -43,8 +42,7 @@ function setup() {
 
 function windowResized() {
 
-  let w = $("#middle").css("width");
-  w = parseInt(w.slice(0,w.length-2))-30;
+  let w = parseNum($("#middle").css("width"))-30;
   resizeCanvas(w,w*.75);
 }
 
