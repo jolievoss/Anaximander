@@ -1,0 +1,103 @@
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+<meta content="9cc4209b1115b19" name="cf-2fa-verify">
+<title>FIND OER - start.me</title>
+<meta content="A startpage with online resources about FIND OER, created by Boyoung." name="description">
+<meta content="https://static.start.me/f_auto,q_auto/avatars/ohclsnaaznl6didbpuvk" name="thumbnail">
+<meta content="Boyoung (start.me)" name="author">
+<link href="https://start.me/p/QRDO7R/find-oer" rel="canonical">
+<script>
+  
+  var canonicalUrl = 'https://start.me/p/QRDO7R/find-oer';
+  var anchor = document.createElement('a');
+  anchor.href = canonicalUrl;
+  canonicalUrl = anchor;
+  if (location.search) canonicalUrl.search = location.search;
+  if (location.hash) canonicalUrl.hash = location.hash;
+  
+  
+  if (location.href != canonicalUrl.href) {
+    if (window.history) {
+      try {
+        history.replaceState({}, null, canonicalUrl.href);
+      } catch (e) {
+        location.href = canonicalUrl.href;
+      }
+    } else {
+      location.href = canonicalUrl.href;
+    }
+  }
+</script>
+
+<meta content="no-referrer" name="referrer">
+
+<meta content="IE=EDGE" http-equiv="X-UA-Compatible">
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="z60pVNxN7NEZyLPizgPTKhGu4toTqWZgvhwLy1mT3enOaRAHztjs0zsn8EQ8iWOymDhnTgKjltdjPPKmT7tlTg==" />
+<script>
+  window.addEventListener('error', function(error) {
+    try {
+      if (!error || !error.filename) return;
+      var script = document.querySelector('script[loading][src="' + error.filename + '"]');
+      if (script) script.setAttribute('error', error.message || 'yes')
+    } catch (e) {}
+  });
+</script>
+
+
+<script type="application/ld+json">
+[{"@context":"http://schema.org","@type":"Organization","name":"start.me","alternateName":"start.me B.V.","legalName":"start.me B.V.","logo":"https://c.start.me/assets/favicons/favicon-256-30ad53fce117b8776ce0b85ba1a147f770c010f7a8fa33d423e65e98abd69f35.png","url":"https://start.me","email":"support@start.me","sameAs":["https://facebook.com/startmePAGE","https://twitter.com/startme","https://www.linkedin.com/company-beta/5281275/","https://plus.google.com/+StartMe"],"location":{"@type":"PostalAddress","addressCountry":"NL","addressLocality":"Den Haag","postalCode":"2597JB","streetAddress":"Waalsdorperweg 16"}},{"@context":"http://schema.org","@type":"WebSite","name":"start.me","url":"https://start.me","potentialAction":{"@type":"SearchAction","target":"https://start.me/search/google?q={search_term_string}","query-input":"required name=search_term_string"}}]
+</script>
+
+<meta content="FIND OER - start.me" data-vmid="og:title" data-vue-meta="true" property="og:title">
+<meta content="https://start.me/p/QRDO7R/find-oer" property="og:url">
+<meta content="A startpage with online resources about FIND OER, created by Boyoung." data-vmid="og:description" data-vue-meta="true" property="og:description">
+<meta content="https://c.start.me/screenshots/p/QRDO7R" property="og:image">
+<meta content="website" property="og:type">
+<meta content="start.me" property="og:site_name">
+<meta content="256485647863321" property="fb:app_id">
+<meta content="400842316708555" property="fb:pages">
+<meta content="summary_large_image" name="twitter:card">
+<meta content="@startme" name="twitter:site">
+<meta content="FIND OER" name="twitter:title">
+<meta content="A startpage with online resources about FIND OER, created by Boyoung." name="twitter:description">
+<meta content="https://c.start.me/screenshots/p/QRDO7R" name="twitter:image">
+<link href="https://c.start.me/assets/favicons/favicon-16-987d5ae010e3e00048f706fd4ce34bde5e892059fe56b88fde6f7049f71dd1ad.png" id="favicon_16" rel="icon" sizes="16x16">
+<link href="https://c.start.me/assets/favicons/favicon-32-3f41352d4280396443ccd71a1fcad5a96a072365bc8ce95c63f8368ddf75a077.png" id="favicon_32" rel="icon" sizes="32x32">
+<link href="https://c.start.me/assets/favicons/favicon-48-edc0399ad8784977c0999c79e9e58817046616a107459ba30b8622adfbfbd951.png" id="favicon_48" rel="icon" sizes="48x48">
+<link href="https://c.start.me/assets/favicons/favicon-64-fff35804676f95d1dbe48e65281e094bf3aa47c3dc5f1f7a1a5ad2aed6e0fdd4.png" id="favicon_64" rel="icon" sizes="64x64">
+<link href="https://c.start.me/assets/favicons/favicon-96-ffda56ab92f6114a7180f9eb50bd43e5d0ad1fab50d7df8c9fdb2cae1051357f.png" id="favicon_96" rel="icon" sizes="96x96">
+<link href="https://c.start.me/assets/favicons/favicon-128-80f225f2cac6d3cee478031e8eace0979e9f35f6efca6151c81c582f9557a461.png" id="favicon_128" rel="icon" sizes="128x128">
+<link href="https://c.start.me/assets/favicons/favicon-144-c0059876c77cf9a394568012ea082085332f62b4b98e279dc50cd7264250081c.png" id="favicon_144" rel="icon" sizes="144x144">
+<link href="https://c.start.me/assets/favicons/favicon-192-fcc287d9ac97ac033991a597a5d2692380c717fcdf3c8977151bd9cd5e24f727.png" id="favicon_192" rel="icon" sizes="192x192">
+<link href="https://c.start.me/assets/favicons/favicon-256-30ad53fce117b8776ce0b85ba1a147f770c010f7a8fa33d423e65e98abd69f35.png" id="favicon_256" rel="icon" sizes="256x256">
+
+<link href="https://c.start.me/assets/favicons/favicon-76-c5a4700ac807430e4f14a65495009e77e35cc076113aee9f1044e8e257b23267.png" rel="apple-touch-icon-precomposed" sizes="76x76">
+<link href="https://c.start.me/assets/favicons/favicon-76-c5a4700ac807430e4f14a65495009e77e35cc076113aee9f1044e8e257b23267.png" rel="apple-touch-icon" sizes="76x76">
+<link href="https://c.start.me/assets/favicons/favicon-120-2dd0fa90116a5fe57efe39e3a887df630e8a144ffbb203fe38aa971ae972f2d9.png" rel="apple-touch-icon-precomposed" sizes="120x120">
+<link href="https://c.start.me/assets/favicons/favicon-120-2dd0fa90116a5fe57efe39e3a887df630e8a144ffbb203fe38aa971ae972f2d9.png" rel="apple-touch-icon" sizes="120x120">
+<link href="https://c.start.me/assets/favicons/favicon-152-8fcdd836dcc08ebf64fa6fb15b8b061f1a99c7c7d9c657fd86c879d656eb7573.png" rel="apple-touch-icon-precomposed" sizes="152x152">
+<link href="https://c.start.me/assets/favicons/favicon-152-8fcdd836dcc08ebf64fa6fb15b8b061f1a99c7c7d9c657fd86c879d656eb7573.png" rel="apple-touch-icon" sizes="152x152">
+<link href="https://c.start.me/assets/favicons/favicon-180-8726475c92afd3d57c2d4526fd4c1a994c494daec69bc214f9f760b8c77b00c7.png" rel="apple-touch-icon-precomposed" sizes="180x180">
+<link href="https://c.start.me/assets/favicons/favicon-180-8726475c92afd3d57c2d4526fd4c1a994c494daec69bc214f9f760b8c77b00c7.png" rel="apple-touch-icon" sizes="180x180">
+<!--[if IE]>
+<link href="/favicon.ico" rel="shortcut icon">
+<![endif]-->
+<meta content="#6392ff" name="msapplication-TileColor">
+<meta content="https://c.start.me/assets/favicons/favicon-150-5c52b53da0b9c8ac5efbd05629112179339401261e5afaf1467776cae8288042.png" name="msapplication-TileImage">
+<meta content="start.me" name="application-name">
+<meta content="yes" name="mobile-web-app-capable">
+<meta content="no" name="apple-mobile-web-app-capable">
+<link href="/en/webmanifest.webmanifest" rel="manifest">
+<meta content="#0093d5" name="theme-color">
+<link href="https://chrome.google.com/webstore/detail/new-tab-page-by-startme/cfmnkhhioonhiehehedmnjibmampjiab" rel="chrome-webstore-item">
+<meta content="obieelmbnhmflidokdjooeeibeaiialm" property="aoc:app_id">
+<link href="/opensearch.xml" rel="search" title="start.me" type="application/opensearchdescription+xml">
+
+<link rel="stylesheet" media="screen" href="https://c.start.me/packs/application.0ce0742630a217d9fdcd.css" />
+</head>
+<body class="rendering">
+<div id="app">
+</body>
+</html>
