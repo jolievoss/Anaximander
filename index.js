@@ -84,18 +84,6 @@ let computeDocHeight = function() {
 $(".workLinks").on("mouseenter", function() {
     let work=$(this)[0].classList[1];
     $("."+work).css("text-decoration","line-through");
-    let first = "."+work+":eq(0)";
-    let second = "."+work+":eq(1)";
-    if ($(second).length>0) {
-        $(second).animate({opacity: 0.0, "margin-left": '-50px'}, 800, setInvisible);
-        $(second).animate({opacity: 1.0, "margin-left": '0px'}, 10, setVisible);
-        function setInvisible() {
-        $(this).css('visibility', 'hidden');
-        }
-        function setVisible() {
-        $(this).css('visibility', 'visible');
-        }
-    }
 });
 
 $(".workLinks").on("mouseleave", function() {
